@@ -1,4 +1,51 @@
+
 body{
-    font-family: "Merriweather";
-    
+    font-family: 'Merriweather', serif;
+   
+}
+body.h-100{
+    font-family: 'Merriweather', serif;
+   
+}
+
+a.btn-customized {
+    margin-top: 1rem;
+    margin-right: 0.1rem;
+    padding: .75rem 1.5rem;
+    background: #FF2353;
+    border: 1;
+    border-color: #FF2353;
+    border-radius: 0;
+    font-family: 'Open Sans', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: none;
+    transition: none;
+}
+
+a.btn-customized-inverted {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: .75rem 1.5rem;
+    border-radius: 0;
+    /* background: #fff; */
+    /* border: 10px; */
+    font-family: 'Open Sans', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FF2353;
+    box-shadow: none;
+    transition: none;
+}
+
+.btn-customized:hover, .btn-customized:focus, .btn-customized:active, .btn-customized.active{
+    color: #fff;
+    background-color: #fff;
+    border-color: #fff; /*set the color you want here*/
+}
+
+#chevron{
+    opacity: 0.5;
+    color: rgb(154, 154, 154);
 }
