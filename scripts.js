@@ -1,19 +1,8 @@
-const e = require('express');
-const express = require('express');
-const app     = express();
 var async = require('express-async-await');
 const fetch = require('node-fetch');
 
-const port    = 3000;
 
-
-
-app.use(express.static("public"));
-app.set('view engine', 'ejs');
-
-// Root
-app.get('/', async(req, res) => {
-  (async function () { // async function expression assigned to a variable
+(async function getdata() { // async function expression assigned to a variable
     var jsonData;
   
     async function getGit(){
@@ -60,15 +49,9 @@ app.get('/', async(req, res) => {
   
     var githubData = JSON.parse(text)
   
-    res.render('index.ejs', {ghData:githubData});
+    return  githubData
   }).catch( ()=>{
       console.log ("didnt work");
   })
-});
 
-
-//Setup Server listen
-app.listen(port, () => {
-  console.log(`Site listening at http://localhost:${port}`);
-});
-
+module.exports.getdata = getdata;

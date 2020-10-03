@@ -7,6 +7,7 @@
     <title>Daniel Esparza | Aspiring Software Developer | Security Professional</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/app.css" type="text/css">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -22,14 +23,16 @@
                     <h1><b>Howdy, I'm Daniel. </b></h1>
                     <p>An aspiring software dev whose been... </p>
                     <p>
-                        <span id="chevron" class="text-muted">>   </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit tenetur possimus quia vel. Quasi quae explicabo fugiat provident veniam autem delectus, possimus sit ipsa rem minima deleniti harum tempora iste!
+                        <span id="chevron" class="text-muted">> </span>
+                        <%= ghData.githubLabel %> <Link href={"https://github.com/<%= ghData.repo %>"}><%= ghData.repo %> </Link>
+                        on <%= ghData.date %>
                     </p>
                     
                     <p>I am currently a Cybersecurity Professional at <b>Company</b>.</p>
 
-                    <a href="www.google.com" role="button" class="btn btn-secondary btn-customized"> Github</a>
+                    <a href="https://github.com/d-Esparza19" role="button" class="btn btn-secondary btn-customized"> Github</a>
 
-                    <a href="www.bing.com"  role="button" class="btn btn-outline-danger btn-customized-inverted">Contact Me</a>
+                    <a href="mailto:myemail@gmail.com"  role="button" class="btn btn-outline-danger btn-customized-inverted">Contact Me</a>
                     
                 </div>
                 
@@ -37,6 +40,7 @@
         </div>
     </div>
 
+<!-- <script type="text/javascript" src="../public/scripts.js"></script> -->
 
 </body>
 </html>
