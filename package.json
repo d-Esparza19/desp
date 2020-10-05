@@ -9,6 +9,7 @@
   "author": "Daniel Esparza",
   "license": "MIT",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-async-await": "^1.1.0",

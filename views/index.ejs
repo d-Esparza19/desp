@@ -21,11 +21,21 @@
                 <div class="">
 
                     <h1><b>Howdy, I'm Daniel. </b></h1>
-                    <p>An aspiring software dev whose been... </p>
-                    <p>
+                    <p>An aspiring software dev who — </p>
+                    <p class="profileText">
                         <span id="chevron" class="text-muted">> </span>
-                        <%= ghData.githubLabel %> <Link href={"https://github.com/<%= ghData.repo %>"}><%= ghData.repo %> </Link>
-                        on <%= ghData.date %>
+                        <% if(ghData.githubLabel != "none"){ %>
+                            <%= ghData.githubLabel %> <a class="profileAnchor" href={"https://github.com/<%= ghData.repo %>"}><%= ghData.repo %> </a>
+                            <!-- on <%= ghData.date %> -->
+                        <% }else{ %>
+                            contributing to <a class="profileAnchor" href={"https://github.com/d-Esparza19/desp"}> d-Esparza19/desp </a>
+                        <%}%>
+                    </p>
+
+                    <p class="profileText">
+                        <span id="chevron" class="text-muted">> </span>
+                        commented on <a class="profileAnchor" href={"<%= rData.link_permalink %>"}><%= rData.link_title.substring(0,20) %> as user DaesDev</a> 
+                       
                     </p>
                     
                     <p>I am currently a Cybersecurity Professional at <b>Company</b>.</p>
